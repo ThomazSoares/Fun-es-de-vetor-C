@@ -57,3 +57,20 @@
         printf("\n");
     }
 }
+{
+
+    int mdc(int a, int b){
+        int i = 1;
+        int maiorzin = 1;
+        
+        while (a / i >= 1 && b / i >= 1){
+            if (a % i == 0 && b % i == 0){
+                maiorzin = i;
+            }
+            
+            i++;
+        }
+        
+        return maiorzin;
+    }
+}
