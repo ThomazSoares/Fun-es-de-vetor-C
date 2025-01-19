@@ -74,3 +74,23 @@
         return maiorzin;
     }
 }
+{
+
+    int eh_primo(int num){
+        int i = 2;
+        int ehs_primo = 1;
+        
+        while (num / i >= 2){
+            if (num % i == 0){
+                return 0;
+                ehs_primo = 0;
+            }
+            
+            i++;
+        }
+        
+        if (ehs_primo == 1){
+            return 1;
+        }
+    }
+}
